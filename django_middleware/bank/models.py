@@ -9,7 +9,7 @@ class Customer(models.Model):
     e_signature = models.CharField(max_length=255, null=True, blank=True)
     pin = models.IntegerField()
     balance = models.DecimalField(
-        max_digits=100, decimal_places=100, default=1000)
+        max_digits=100, decimal_places=2, default=1000)
     basic_info = models.TextField()
 
 
